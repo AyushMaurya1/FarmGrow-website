@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>FarmGrow_Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form" >
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" id="uname" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="pass" placeholder="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <form action="#" class="sign-up-form" id="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" autocomplete="off" name="uname" id="uname" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" autocomplete="off" name="email" id="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" autocomplete="off" name="pass" id="pass" placeholder="Password" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="repeat_password" autocomplete="off" name="re_pass" id="re_pass" placeholder="Repeat your Password" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-phone flip-horizontal"></i>
+              <input type="tel" autocomplete="off" name="contact_number" id="contact_number" placeholder="Contact Number" />
+            </div>
+            <div class="terms-condition">
+              <input type="checkbox" id="agree-term" name="agree-term" class="agree-term" />
+              <span class="agree-text">I agree to all the statements in the <a href="#" class="term-service">Terms of Service</a>.</span>
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ? Create an account.</h3>
+            <p>
+              Ready to elevate your farming experience? Sign up now to access a suite of specialized services designed to boost your agricultural productivity and efficiency.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+          <img src="img/Signin.svg" class="image" alt="Sign_in" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Already a member?</h3>
+            <p>
+              Welcome ! Explore our latest offerings and manage your account effortlessly. Get ready to take your farming journey to new heights.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+          <img src="img/Signup.svg" class="image" alt="Sign_up" />
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
