@@ -12,5 +12,7 @@ FarmGrow is a comprehensive platform designed to empower farmers with innovative
 - **Weather Updates**: Stay informed with real-time weather forecasts and alerts customized to your location, helping you plan your farming activities effectively.
 - **Product Purchase**: Simplify your shopping experience with easy access to agricultural supplies, equipment, and tools from our platform.
 - **Government Scheme Access**: Unlock access to essential government schemes, subsidies, and support programs to aid agricultural development.
+- **Crop Information Access**: Access detailed crop information including cultivation practices, pest management, and harvesting techniques for enhanced farming.
+- **Market Trends Analysis**: Stay updated on real-time market data, crop prices, and trade opportunities to make informed decisions for increased profitability.
 
 
