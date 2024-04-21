@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>FarmGrow: Crop Disease Classification</title>
+      <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" type="text/css" href="/static/css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon"  type="image/gif" href="/static/images/fevicon.png">
+      <!-- Scrollbar Custom CSS -->
+	  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+      <link rel="stylesheet" href="/static/css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      <!-- header section start -->
+      <div class="header_section">
+         
+      <!-- </div> -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light container">
+            <a class="navbar-brand"><a href="#"><img src="/static/images/Logo-FarmGrow.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Service</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Resources</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Our Models</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                     <a class="nav-link" href="https://academicship.com/my-account/">My Account</a>
+                  </li> -->
+               </ul>
+            </div>
+         </nav>
+      <!-- header section end -->
+      <!-- banner section start -->
+      
+      </div>
+      <!-- banner section end -->
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="offset-md-2"></div>
+                  <div class="col-md-8">
+                     <div class="container_main">
+                        <h1 class="our_model">Welcome to FarmGrow's Crop Disease Detection Hub!</h1>
+                     </div>
+                  </div>
+                  <div class="about_text"
+                     <h5 class="our_model"> Our platform offers state-of-the-art tools to swiftly identify crop diseases. 
+                        With our user-friendly interface and accurate algorithms, you can diagnose issues efficiently, 
+                        protecting your yield and optimizing farm productivity. Let's keep your crops healthy and thriving!</h5>
+                  </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- mission section start -->
+      <div class="mission_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="mission_taital">Crop Disease Detection Hub</h1>
+                  <p class="mission_text">VGG16 Model trained with Plant Village dataset is telling you the disease your crop is affected with. </p><br>
+               </div>
+               <br>
+            </div>
+         </div>
+		 <div class="table-container">
+			<table style="border: 1px solid black; margin: 0px auto;" class="center">
+				<thead>
+				  <tr>
+					<th>Name of parameter</th>
+					<th>Value</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td>Value</td>
+					<td>{{predictions}}</td>
+				  </tr>
+				  <tr>
+					<td>Threshold</td>
+					<td>{{thresholded}}</td>
+				  </tr>
+				</tbody>
+				</table>
+			<!-- <h1> <b> FORM DETAILS</b> </h1>
+				<h3>value: {{predictions}}</h3>
+				<h3>Thresold: {{thresholded}}</h3> -->
+		 </div>
+		 <div>
+		 <!-- <h3>Confusion Matric</h3>
+			<img src="../uploads/Screenshot_9.png" height="500px" width="600px" alt="img_path" class="image"> -->
+
+     
+		</div>
+         <!-- <div class="mission_section_3">
+            <div class="row">
+               <div class="offset-md-4"></div>
+               <div class="col-md-4">
+                  <div class="container_main">
+                     <p style="background-color: rgb(216, 78, 11);"   class="alteration_text">The model is trained to predict condition of Your health.</p>
+                           <h4  style="background-color: black; "  class="some_text">Upload Your Image for Suggestion to relife </h4>
+                     <img src=/static/images/0002.png alt="Avatar">
+                     <div class="overlay">
+                        <div class="text">
+                           <div class="btn_main">
+                              <form method=post enctype=multipart/form-data>
+                                 <p class="text-light">
+                                    <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                                    <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+                                    <p><img id="output" width="200" /></p>
+
+                                    <script>
+                                    var loadFile = function(event) {
+                                       var image = document.getElementById('output');
+                                       image.src = URL.createObjectURL(event.target.files[0]);
+                                    };
+                                    </script>
+                                    <input type=file name=file>
+                                    <input type=submit value=Upload>
+                                 </p>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+                <div class="col-md-5">
+                  
+               </div>
+            </div> -->
+         </div>
+         
+         
+      </div>
+
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-6 col-md-6">
+                  <div class="footer_logo"><img src="/static/images/Logo-FarmGrow.png"></div>
+                  <div><p>Connect with Us: Stay updated with the latest news and offers by following us on social media. 
+                     For any inquiries or assistance, please reach out to our dedicated support team. </p></div>
+                  
+               </div>
+               <div class="col-sm-6 col-md-6">
+                  <div class="footer_menu_main">
+                        <div class="footer_menu">
+                           <ul>
+                              <li><a href="#">My Account</a></li>
+                              <li><a href="#">Return and Refund Policy</a></li>
+                              <li><a href="#">Privacy Policy</a></li>
+                              <li><a href="#">Contact us</a></li>
+
+                           </ul>
+                        </div>
+                  </div>
+               </div>
+               
+            </div>
+            <div class="footer_section_2">
+               <div class="row">
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-6 col-md-6">
+                  <p class="copyright_text">2024 All Rights Reserved.<a href="#"> Farm Grow</a></p>
+               </div>
+               <div class="col-md-6 col-sm-3">
+                  <div class="social-icon">
+                     <a href="#" class="fa fa-facebook"></a>  
+                     <a href="#" class="fa fa-linkedin"></a>  
+                     <a href="#" class="fa fa-twitter"></a> 
+                     <a href="#" class="fa fa-instagram"></a>  
+                     <a href="#" class="fa fa-youtube"></a> 
+                     <a href="#" class="fa fa-telegram"></a> 
+                     <a href="https://api.whatsapp.com/message/QCLST3HFLH46M1?autoload=1&app_absent=0" class="fa fa-whatsapp"></a> 
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="/static/js/jquery.min.js') }}"></script>
+      <script src="/static/js/popper.min.js') }}"></script>
+      <script src="/static/js/bootstrap.bundle.min.js') }}"></script>
+      <script src="/static/js/jquery-3.0.0.min.js') }}"></script>
+      <script src="/static/js/plugin.js') }}"></script>
+      <!-- sidebar -->
+      <script src="/static/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+      <script src="/static/js/custom.js') }}"></script>
+      <!-- javascript --> 
+      <script src="/static/js/owl.carousel.js') }}"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
+   </body>
+</html>
